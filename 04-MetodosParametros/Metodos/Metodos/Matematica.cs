@@ -23,12 +23,12 @@ namespace Metodos
 			return resultado;
 		}
 
-		public int Multiplicacao()  // 2. Metodo Multiplicar
+		public int Multiplicacao()  // 3. Metodo Multiplicar
 		{
 			int resultado = numA * numB;
 			return resultado;
 		}
-		public int Divisao()  // 2. Metodo Dividir
+		public int Divisao()  // 4. Metodo Dividir
 		{
 			int resultado = numA / numB;
 			return resultado;
