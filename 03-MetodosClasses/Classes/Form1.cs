@@ -19,8 +19,9 @@ namespace Classes
 
 		private void BtnOutput_Click(object sender, EventArgs e)
 		{
-			Pessoa pessoa1 = new Pessoa();  // criar nova instancia
-
-			}
+			Pessoa novaPessoa = new Pessoa();  // 3. criar nova instancia
+			novaPessoa.Falar();  // 4. Estou a chamar a execução do metodo Falar()
+			novaPessoa.Correr();  // 7.Estou a chamar a execução do metodo Correr()
+		}
 	}
 }
