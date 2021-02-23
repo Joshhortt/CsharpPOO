@@ -22,7 +22,7 @@ namespace Metodos
 
 			// I-parte - Uma forma de fazer
 			/*
-			Matematica calculadora = new Matematica();   // Criar nova instancia
+			Matematica calculadora = new Matematica();  
 			calculadora.numA = 60; // variavel int utilizada nos calculos
 			calculadora.numB = 30; // variavel int utilizada nos calculos
 
@@ -36,16 +36,25 @@ namespace Metodos
 			//-------------------------------------------------------------------------------------------------------------
 
 			// II-parte - Uma forma mais simples de fazer
-			Matematica calculadora = new Matematica();   // Criar nova instancia
-			int resultado = calculadora.Adicao(60, 30);
+			//Matematica calculadora = new Matematica();   
+			//int resultado = calculadora.Adicao(60, 30);
 			//int resultado = calculadora.Subtracao(60, 30);
 			//int resultado = calculadora.Multiplicacao(60, 30);
 			//int resultado = calculadora.Divisao(60, 30);
-			caixaTexto.Text = resultado.ToString();
-
-		
+			//caixaTexto.Text = resultado.ToString();
 			// label chamada de caixaTexto = ao calculo do metodo Adicao() ou Subtracao(), etc.. que converte para String, 
-			// contudo aqui o metodo Adicao precisa de dois valores int entre parentesis
+			// contudo aqui o metodo Adicao precisa de dois valores int entre parentesis.
+
+			//-------------------------------------------------------------------------------------------------------------
+
+			// III-parte - Uma forma ainda mais simples de fazer so com um metodo
+			Matematica calculadora = new Matematica();   
+			//int resultado = calculadora.Operaçoes(10,5,"abcd");  // mostra -1000, como se fosse um erro.
+			int resultado = calculadora.Operaçoes(10, 5, "adicao");
+			//int resultado = calculadora.Operaçoes(10, 5, "subtracao");
+			//int resultado = calculadora.Operaçoes(10, 5, "multiplicacao");
+			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
+			caixaTexto.Text = resultado.ToString();
 		}
 	}
 }

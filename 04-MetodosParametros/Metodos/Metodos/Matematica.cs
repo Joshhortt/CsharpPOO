@@ -38,6 +38,7 @@ namespace Metodos
 		//-----------------------------------------------------------------------
 
 		// II-parte - Uma forma mais simples de fazer
+		/*
 		public int Adicao(int numA, int numB)  // 1. Metodo Adicionar com dois parametros int
 		{
 			return numA + numB;
@@ -55,6 +56,36 @@ namespace Metodos
 		public int Divisao(int numA, int numB)  // 4. Metodo Dividir
 		{
 			return numA / numB;
+		}
+		*/
+		//-----------------------------------------------------------------------
+
+		// III-parte - Uma forma ainda mais simples de fazer so com um metodo
+
+		public int Operaçoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
+		{
+			int resultado = -1;  // mostra -1 (se nao houver Default:) sempre que no terceiro parametro a palavara colocada nao seja 'adicao', 'subtracao', 'multiplicacao', 'divisao'
+
+			// condicional com switch / case
+			switch (operacao) 
+			{
+				case "adicao":
+					resultado = numA + numB;
+					break;
+				case "subtracao":
+					resultado = numA - numB;
+					break;
+				case "multiplicacao":
+					resultado = numA * numB;
+					break;
+				case "divisao":
+					resultado = numA / numB;
+					break;
+				default:
+					resultado = -1000; // mostra -1000 sempre que no terceiro parametro a palavara colocada nao seja 'adicao', 'subtracao', 'multiplicacao', 'divisao'
+					break;
+			}
+			return resultado; 
 		}
 	}
 }
