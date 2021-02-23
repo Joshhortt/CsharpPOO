@@ -62,7 +62,7 @@ namespace Metodos
 
 		// III-parte - Uma forma ainda mais simples de fazer so com um metodo
 		/*
-		public int Operaçoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
+		public int Operacoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
 		{
 			int resultado = -1;  // mostra -1 (se nao houver Default:) sempre que no terceiro parametro a palavara colocada nao seja 'adicao', 'subtracao', 'multiplicacao', 'divisao'
 
@@ -92,8 +92,8 @@ namespace Metodos
 		//-------------------------------------------------------------------------------------------------------------
 
 		// IV-parte - Uma forma mais simples de fazer IF THAN ELSE
-
-		public int Operaçoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
+		/*
+		public int Operacoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
 		{
 			int resultado = -1;
 			if (operacao == "adicao")
@@ -105,6 +105,53 @@ namespace Metodos
 			else if (operacao == "divisao")
 				resultado = numA / numB;
 			return resultado;
+		}
+		*/
+
+		//-------------------------------------------------------------------------------------------------------------
+
+		// V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if  
+
+		int parcelaA;
+		int parcelaB;
+
+		public int Operacoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
+		{
+
+			parcelaA = numA;
+			parcelaB = numB;
+			int resultado = 0;
+
+			if (operacao == "adicao")
+				resultado = adicao();
+			else if (operacao == "subtracao")
+				resultado = subtracao();
+			else if (operacao == "multiplicacao")
+				resultado = multiplicacao();
+			else if (operacao == "divisao")
+				resultado = divisao();
+			return resultado;
+		}
+
+
+		private int adicao()  // metodo privado
+		{
+			return parcelaA + parcelaB;
+		}
+
+		private int subtracao()  // metodo privado
+		{
+			return parcelaA - parcelaB;
+		}
+
+		private int multiplicacao()  // metodo privado
+		{
+			return parcelaA * parcelaB;
+		}
+
+		private int divisao()  // metodo privado
+		{
+			return parcelaA / parcelaB;
 		}
 	}
 }

@@ -60,7 +60,7 @@ namespace Metodos
 			//-------------------------------------------------------------------------------------------------------------
 
 			// IV-parte - Uma forma mais simples de fazer IF ELSE IF
-
+			/*
 			Matematica calculadora = new Matematica();   
 			
 			//int resultado = calculadora.Operaçoes(10, 5, "adicao");
@@ -68,7 +68,17 @@ namespace Metodos
 			int resultado = calculadora.Operaçoes(10, 5, "multiplicacao");
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			caixaTexto.Text = resultado.ToString();
+			*/
+			//-------------------------------------------------------------------------------------------------------------
 
+			// V-parte 
+			Matematica calculadora = new Matematica();
+			
+			//int resultado = calculadora.Operaçoes(10, 5, "adicao");
+			//int resultado = calculadora.Operaçoes(10, 5, "subtracao");
+			int resultado = calculadora.Operacoes(10, 5, "multiplicacao");
+			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
+			caixaTexto.Text = resultado.ToString();
 		}
 	}
 }
