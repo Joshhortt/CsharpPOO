@@ -14,7 +14,13 @@ namespace Classes
 
 		public void Falar()  // Este metodo (letra maiuscula), nao vai devolver nada (vazio)
 		{
-			System.Windows.Forms.MessageBox.Show("Olá o meu nome é: " + nome);
+			System.Windows.Forms.MessageBox.Show("Olá o meu nome é " + nome);
+		}
+
+		public void ApresentarSe()
+		{
+			System.Windows.Forms.MessageBox.Show("Olá o meu nome é " + nome + " e tenho " + idade + " anos de idade.");
+
 		}
 	}
 }

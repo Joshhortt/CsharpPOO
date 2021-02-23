@@ -21,11 +21,13 @@ namespace Classes
 		{
 			Pessoa pessoa1 = new Pessoa();  // criar nova instancia pessoa2
 			pessoa1.nome = "Marco";
-			pessoa1.Falar();   // Quero executar o metodo Falar() que mostra uma messageBox
+			pessoa1.idade = 39;
+			//pessoa1.Falar();    Quero executar o metodo Falar() que mostra uma messageBox
+			pessoa1.ApresentarSe();  // Quero executar o metodo ApresentarSe() que mostra uma messageBox
 
-			Pessoa pessoa2 = new Pessoa();  // criar nova instancia pessoa 2
-			pessoa2.nome = "Carlos";
-			pessoa2.Falar();  // Quero executar o metodo Falar() que mostra uma messageBox
+			//Pessoa pessoa2 = new Pessoa();  // criar nova instancia pessoa 2
+			//pessoa2.nome = "Carlos";
+			//pessoa2.Falar();  // Quero executar o metodo Falar() que mostra uma messageBox
 
 		}
 	}
