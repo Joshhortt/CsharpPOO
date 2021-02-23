@@ -61,7 +61,7 @@ namespace Metodos
 		//-----------------------------------------------------------------------
 
 		// III-parte - Uma forma ainda mais simples de fazer so com um metodo
-
+		/*
 		public int Operaçoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
 		{
 			int resultado = -1;  // mostra -1 (se nao houver Default:) sempre que no terceiro parametro a palavara colocada nao seja 'adicao', 'subtracao', 'multiplicacao', 'divisao'
@@ -86,6 +86,25 @@ namespace Metodos
 					break;
 			}
 			return resultado; 
+		}
+		*/
+
+		//-------------------------------------------------------------------------------------------------------------
+
+		// IV-parte - Uma forma mais simples de fazer IF THAN ELSE
+
+		public int Operaçoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
+		{
+			int resultado = -1;
+			if (operacao == "adicao")
+				resultado = numA + numB;
+			else if(operacao == "subtracao")
+				resultado = numA - numB;
+			else if (operacao == "multiplicacao")
+				resultado = numA * numB;
+			else if (operacao == "divisao")
+				resultado = numA / numB;
+			return resultado;
 		}
 	}
 }

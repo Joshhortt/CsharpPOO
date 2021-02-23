@@ -48,13 +48,27 @@ namespace Metodos
 			//-------------------------------------------------------------------------------------------------------------
 
 			// III-parte - Uma forma ainda mais simples de fazer so com um metodo
-			Matematica calculadora = new Matematica();   
+			//Matematica calculadora = new Matematica();   
 			//int resultado = calculadora.Operaçoes(10,5,"abcd");  // mostra -1000, como se fosse um erro.
-			int resultado = calculadora.Operaçoes(10, 5, "adicao");
+			//int resultado = calculadora.Operaçoes(10, 5, "adicao");
 			//int resultado = calculadora.Operaçoes(10, 5, "subtracao");
 			//int resultado = calculadora.Operaçoes(10, 5, "multiplicacao");
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
+			//caixaTexto.Text = resultado.ToString();
+
+
+			//-------------------------------------------------------------------------------------------------------------
+
+			// IV-parte - Uma forma mais simples de fazer IF ELSE IF
+
+			Matematica calculadora = new Matematica();   
+			
+			//int resultado = calculadora.Operaçoes(10, 5, "adicao");
+			//int resultado = calculadora.Operaçoes(10, 5, "subtracao");
+			int resultado = calculadora.Operaçoes(10, 5, "multiplicacao");
+			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			caixaTexto.Text = resultado.ToString();
+
 		}
 	}
 }
