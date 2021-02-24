@@ -17,10 +17,22 @@ namespace ConstrutoresOverloading
 			_nome = nome;
 			_idade = idade;
 		}
-
+		//==========================================================================================================================
 		public void Apresentar() // O Metodo
 		{
-
+			System.Windows.Forms.MessageBox.Show(_nome + " -> " + _idade + " anos.");
 		}
+		//============================= Overload mas com assinatura diferente string ======================================================
+		public void Apresentar(string separador) // O Metodo com o mesmo nome, mas para que seja aceite tem de haver um ou mais parametros nele.
+		{
+			System.Windows.Forms.MessageBox.Show(_nome + separador + _idade + " anos.");
+		}
+
+		//============================= Overload mas com assinatura diferente string e int ======================================================
+		public void Apresentar(string separador, int idade) // O Metodo com o mesmo nome, mas para que seja aceite tem de haver um ou mais parametros nele.
+		{
+			System.Windows.Forms.MessageBox.Show(_nome + separador + idade + " anos.");
+		}
+
 	}
 }

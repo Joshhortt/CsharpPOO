@@ -20,6 +20,9 @@ namespace ConstrutoresOverloading
 		private void BtnOk_Click(object sender, EventArgs e)
 		{
 			Teste v = new Teste("Marco Poluzzo", 40);
+			v.Apresentar();
+			v.Apresentar(" >>> ");
+			v.Apresentar();
 		}
 	}
 }
