@@ -8,5 +8,11 @@ namespace CamposPropriedades
 {
 	class Teste
 	{
+		public string nome;
+
+		public void Apresentar()
+		{
+			System.Windows.Forms.MessageBox.Show(nome);
+		}
 	}
 }

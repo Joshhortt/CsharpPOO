@@ -19,7 +19,9 @@ namespace CamposPropriedades
 
 		private void BtnOk_Click(object sender, EventArgs e)
 		{
-
+			Teste v = new Teste();
+			v.nome = "Jose Horta";
+			v.Apresentar();
 		}
 	}
 }
