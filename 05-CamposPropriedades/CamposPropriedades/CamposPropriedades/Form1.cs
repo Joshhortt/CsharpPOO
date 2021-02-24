@@ -20,7 +20,12 @@ namespace CamposPropriedades
 		private void BtnOk_Click(object sender, EventArgs e)
 		{
 			Teste v = new Teste();
-			v.nome = "Jose Horta";
+			//------------------ Primeira forma de fazer ---------------
+			//v._nome = "Jose Horta"; // ficou inacessivel pq o campo foi definido como privado, antes de ter criado a estrutura de propriedade
+			//v.Nome = "Jose Hottiger";
+
+			//------------------- Nova forma de fazer ------------------
+			v.Nome = textBox.Text;
 			v.Apresentar();
 		}
 	}
