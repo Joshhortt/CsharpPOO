@@ -19,9 +19,9 @@ namespace Metodos
 
 		private void CmdExecutar_Click(object sender, EventArgs e)
 		{
-
+			#region // I-parte - Uma forma de fazer
 			// I-parte - Uma forma de fazer
-			/*
+			/* 
 			Matematica calculadora = new Matematica();  
 			calculadora.numA = 60; // variavel int utilizada nos calculos
 			calculadora.numB = 30; // variavel int utilizada nos calculos
@@ -32,9 +32,9 @@ namespace Metodos
 			caixaTexto.Text = calculadora.Multiplicacao().ToString();
 			//caixaTexto.Text = calculadora.Divisao().ToString();
 			*/
-
+			#endregion // I-parte - Uma forma de fazer
 			//-------------------------------------------------------------------------------------------------------------
-
+			#region II-parte - Uma forma mais simples de fazer
 			// II-parte - Uma forma mais simples de fazer
 			//Matematica calculadora = new Matematica();   
 			//int resultado = calculadora.Adicao(60, 30);
@@ -44,9 +44,9 @@ namespace Metodos
 			//caixaTexto.Text = resultado.ToString();
 			// label chamada de caixaTexto = ao calculo do metodo Adicao() ou Subtracao(), etc.. que converte para String, 
 			// contudo aqui o metodo Adicao precisa de dois valores int entre parentesis.
-
+			#endregion II-parte - Uma forma mais simples de fazer
 			//-------------------------------------------------------------------------------------------------------------
-
+			#region III-parte - Uma forma ainda mais simples de fazer so com um metodo
 			// III-parte - Uma forma ainda mais simples de fazer so com um metodo
 			//Matematica calculadora = new Matematica();   
 			//int resultado = calculadora.Operaçoes(10,5,"abcd");  // mostra -1000, como se fosse um erro.
@@ -56,9 +56,9 @@ namespace Metodos
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			//caixaTexto.Text = resultado.ToString();
 
-
+			#endregion III-parte - Uma forma ainda mais simples de fazer so com um metodo
 			//-------------------------------------------------------------------------------------------------------------
-
+			#region IV-parte - Uma forma mais simples de fazer IF ELSE IF
 			// IV-parte - Uma forma mais simples de fazer IF ELSE IF
 			/*
 			Matematica calculadora = new Matematica();   
@@ -69,8 +69,9 @@ namespace Metodos
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			caixaTexto.Text = resultado.ToString();
 			*/
+			#endregion IV-parte - Uma forma mais simples de fazer IF ELSE IF
 			//-------------------------------------------------------------------------------------------------------------
-
+			#region V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if 
 			// V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if 
 			/*
 			Matematica calculadora = new Matematica();
@@ -81,9 +82,9 @@ namespace Metodos
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			caixaTexto.Text = resultado.ToString();
 			*/
-
+			#endregion V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if 
 			//-------------------------------------------------------------------------------------------------------------
-
+			#region VI-parte - A mesma forma da V-parte
 			// VI-parte - A mesma forma da V-parte
 			Matematica calculadora = new Matematica();
 
@@ -93,10 +94,9 @@ namespace Metodos
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			caixaTexto.Text = resultado.ToString();
 		}
-
+		#endregion VI-parte - A mesma forma da V-parte
 		//-------------------------------------------------------------------------------------------------------------
-		//-------------------------------------------------------------------------------------------------------------
-
+		#region VII-parte - Nova classe (label->Valor e botao->Teste) com passagem de valor por referencia.
 		// VII-parte - Nova classe (label->Valor e botao->Teste) com passagem de valor por referencia.
 		/*
 		private void CmdExecutar1_Click(object sender, EventArgs e)
@@ -107,9 +107,9 @@ namespace Metodos
 			objeto.Diminuir(ref v);
 			caixaTexto1.Text = v.ToString();
 		} */
-
+		#endregion VII-parte - Nova classe (label->Valor e botao->Teste) com passagem de valor por referencia.
 		//-------------------------------------------------------------------------------------------------------------
-
+		#region VIII-parte - Parametros com valor por defeito. (predefinidos)
 		// VIII-parte - Parametros com valor por defeito. (predefinidos)
 		/*
 		private void CmdExecutar1_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Metodos
 			caixaTexto1.Text = v.ToString();
 		}
 		*/
-
+		#endregion VIII-parte - Parametros com valor por defeito. (predefinidos)
 		//-------------------------------------------------------------------------------------------------------------
 
 		// IX-parte - Parametros com valor por defeito e um parametro sem ser por defeito

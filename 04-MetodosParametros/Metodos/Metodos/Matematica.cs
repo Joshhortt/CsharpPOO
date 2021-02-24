@@ -8,8 +8,9 @@ namespace Metodos
 {
 	class Matematica
 	{
+		#region I- parte - Uma forma de fazer
 		// I- parte -Uma forma de fazer
-		/*                              
+		/*   
 		public int numA;  // propriedade 
 		public int numB;  // propriedade
 		public int Adicao()  // 1. Metodo Adicionar
@@ -34,9 +35,9 @@ namespace Metodos
 			return resultado;
 		}                             
 		*/
-
+		#endregion I- parte - Uma forma de fazer
 		//-----------------------------------------------------------------------
-
+		#region II-parte - Uma forma mais simples de fazer
 		// II-parte - Uma forma mais simples de fazer
 		/*
 		public int Adicao(int numA, int numB)  // 1. Metodo Adicionar com dois parametros int
@@ -58,8 +59,9 @@ namespace Metodos
 			return numA / numB;
 		}
 		*/
+		#endregion II-parte - Uma forma mais simples de fazer
 		//-----------------------------------------------------------------------
-
+		#region III-parte - Uma forma ainda mais simples de fazer so com um metodo
 		// III-parte - Uma forma ainda mais simples de fazer so com um metodo
 		/*
 		public int Operacoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
@@ -88,9 +90,9 @@ namespace Metodos
 			return resultado; 
 		}
 		*/
-
+		#endregion III-parte - Uma forma ainda mais simples de fazer so com um metodo
 		//-------------------------------------------------------------------------------------------------------------
-
+		#region IV-parte - Uma forma mais simples de fazer IF THAN ELSE
 		// IV-parte - Uma forma mais simples de fazer IF THAN ELSE
 		/*
 		public int Operacoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
@@ -107,9 +109,9 @@ namespace Metodos
 			return resultado;
 		}
 		*/
-
+		#endregion IV-parte - Uma forma mais simples de fazer IF THAN ELSE
 		//-------------------------------------------------------------------------------------------------------------
-
+		#region V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if 
 		// V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if  
 		/*
 		int parcelaA;
@@ -133,7 +135,6 @@ namespace Metodos
 			return resultado;
 		}
 
-
 		private int adicao()  // metodo privado
 		{
 			return parcelaA + parcelaB;
@@ -153,7 +154,8 @@ namespace Metodos
 		{
 			return parcelaA / parcelaB;
 		} */
-
+		#endregion V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if 
+		//-------------------------------------------------------------------------------------------------------------
 		// VI-parte - A mesma forma da V-parte renomeando as variaveis para o mesmo nome dos parametros  parcelaA - numA
 
 		int numA;
@@ -178,7 +180,6 @@ namespace Metodos
 			return resultado;
 		}
 
-
 		private int adicao()  // metodo privado
 		{
 			return numA + numB;
@@ -199,5 +200,5 @@ namespace Metodos
 			return numA / numB;
 		}
 	}
-
 }
+

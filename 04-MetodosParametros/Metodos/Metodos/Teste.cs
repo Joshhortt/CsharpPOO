@@ -8,7 +8,7 @@ namespace Metodos
 {
 	class Teste
 	{
-
+		#region VII-parte - Nova Classe (label->Valor e botao->Teste) com passagem de valor por referencia.
 		// VII-parte - Nova Classe (label->Valor e botao->Teste) com passagem de valor por referencia.
 		/*
 		public void Aumentar(ref int valor)  // parametro com passagem de valor por referencia
@@ -20,10 +20,9 @@ namespace Metodos
 		{
 			valor -= 5;  // diminui valor da variavel em 5 (10-5) = 5
 		} */
-
-
+		#endregion VII-parte - Nova Classe (label->Valor e botao->Teste) com passagem de valor por referencia.
 		//-------------------------------------------------------------------------------------------------------------
-
+		#region VIII-parte - Parametros com valor por defeito.(predefinidos)
 		// VIII-parte - Parametros com valor por defeito.(predefinidos)
 		/*
 		public int Aumentar(int valor = 20)
@@ -51,10 +50,8 @@ namespace Metodos
 		}
 
 		*/
-
-
+		#endregion VIII-parte - Parametros com valor por defeito.(predefinidos)
 		//-------------------------------------------------------------------------------------------------------------
-
 		// IX-parte - Parametros com valor por defeito e um parametro sem ser por defeito
 
 		public int Aumentar(int x, int v = 10)  // parametro que NÃO é predifinido por defeito (NAO TEM VALOR) tem de estar a frente do que é por defeito.
