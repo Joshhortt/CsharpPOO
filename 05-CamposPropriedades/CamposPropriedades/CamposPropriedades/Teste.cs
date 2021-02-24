@@ -22,6 +22,14 @@ namespace CamposPropriedades
 		{
 			set 
 			{
+				// Implementação de validação:
+				if (value == "Marco")
+				{
+					System.Windows.Forms.MessageBox.Show("Aconteceu um Erro!");
+					_nome = "ERRO: Nome introduzido possui confidencialidade!";
+				}
+					
+				else
 				_nome = value;  // vai definir um valor. 'value' é uma palavra resrevada pelo C#
 			}
 
