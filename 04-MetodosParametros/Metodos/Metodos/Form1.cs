@@ -93,5 +93,20 @@ namespace Metodos
 			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
 			caixaTexto.Text = resultado.ToString();
 		}
+
+		//-------------------------------------------------------------------------------------------------------------
+		//-------------------------------------------------------------------------------------------------------------
+
+		// VII-parte - Nova classe (label->Valor e botao->Teste) com passagem de valor por referencia.
+
+		private void CmdExecutar1_Click(object sender, EventArgs e)
+		{
+			Teste objeto = new Teste();  // nova instancia
+			int v = 10;                  // variavel
+			//objeto.Aumentar(ref v);
+			objeto.Diminuir(ref v);
+			caixaTexto1.Text = v.ToString();
+		
+		}
 	}
 }
