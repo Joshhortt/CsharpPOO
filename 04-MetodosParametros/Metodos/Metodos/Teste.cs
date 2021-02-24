@@ -25,7 +25,7 @@ namespace Metodos
 		//-------------------------------------------------------------------------------------------------------------
 
 		// VIII-parte - Parametros com valor por defeito.(predefinidos)
-
+		/*
 		public int Aumentar(int valor = 20)
 		{
 			valor += 10;
@@ -48,6 +48,37 @@ namespace Metodos
 		{
 			valor /= 10;
 			return valor;
+		}
+
+		*/
+
+
+		//-------------------------------------------------------------------------------------------------------------
+
+		// IX-parte - Parametros com valor por defeito e um parametro sem ser por defeito
+
+		public int Aumentar(int x, int v = 10)  // parametro que NÃO é predifinido por defeito (NAO TEM VALOR) tem de estar a frente do que é por defeito.
+		{
+			v = v + x;
+			return v;
+		}
+
+		public int Diminuir(int x, int v = 10)
+		{
+			v = v - x;
+			return v;
+		}
+
+		public int Multiplicar(int x, int v = 10)
+		{
+			v = v * x;
+			return v;
+		}
+
+		public int Dividir(int x, int v = 100)
+		{
+			v = v / x;
+			return v;
 		}
 	}
 }

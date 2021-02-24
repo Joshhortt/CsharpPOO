@@ -111,7 +111,7 @@ namespace Metodos
 		//-------------------------------------------------------------------------------------------------------------
 
 		// VIII-parte - Parametros com valor por defeito. (predefinidos)
-
+		/*
 		private void CmdExecutar1_Click(object sender, EventArgs e)
 		{
 			Teste objeto = new Teste();  // nova instancia
@@ -121,6 +121,23 @@ namespace Metodos
 			//v = objeto.Diminuir(); // vai utilizar o valor que la esta que foi declarado como parametro que é 20 por defeito. 30-10=20
 			//v = objeto.Multiplicar();  // vai utilizar o valor que la esta que foi declarado como parametro que é 5 por defeito. 5*10=50
 			v = objeto.Dividir();  // vai utilizar o valor que la esta que foi declarado como parametro que é 200 por defeito. 200/10=20
+			caixaTexto1.Text = v.ToString();
+		}
+		*/
+
+		//-------------------------------------------------------------------------------------------------------------
+
+		// IX-parte - Parametros com valor por defeito e um parametro sem ser por defeito
+
+		private void CmdExecutar1_Click(object sender, EventArgs e)
+		{
+			Teste objeto = new Teste();  // nova instancia
+			int v = 10;                  // variavel
+
+			//v = objeto.Aumentar(300); // 10=10+300= 310
+			//v = objeto.Diminuir(300); //  10=10-300= -290
+			//v = objeto.Multiplicar(300);  // 10=10*300 = 3000
+			v = objeto.Dividir(5);  // 100=100/5 = 20
 			caixaTexto1.Text = v.ToString();
 		}
 	}
