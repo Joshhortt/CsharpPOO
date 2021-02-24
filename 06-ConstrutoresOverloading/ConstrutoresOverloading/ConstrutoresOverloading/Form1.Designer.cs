@@ -46,11 +46,11 @@ namespace ConstrutoresOverloading
 			// LabelOutput
 			// 
 			this.LabelOutput.AutoSize = true;
-			this.LabelOutput.Location = new System.Drawing.Point(119, 70);
+			this.LabelOutput.Location = new System.Drawing.Point(99, 130);
 			this.LabelOutput.Name = "LabelOutput";
-			this.LabelOutput.Size = new System.Drawing.Size(39, 13);
+			this.LabelOutput.Size = new System.Drawing.Size(74, 13);
 			this.LabelOutput.TabIndex = 1;
-			this.LabelOutput.Text = "Output";
+			this.LabelOutput.Text = "Clique em OK!";
 			// 
 			// Form1
 			// 
