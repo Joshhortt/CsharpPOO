@@ -71,9 +71,22 @@ namespace Metodos
 			*/
 			//-------------------------------------------------------------------------------------------------------------
 
-			// V-parte 
+			// V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if 
+			/*
 			Matematica calculadora = new Matematica();
 			
+			//int resultado = calculadora.Operaçoes(10, 5, "adicao");
+			//int resultado = calculadora.Operaçoes(10, 5, "subtracao");
+			int resultado = calculadora.Operacoes(10, 5, "multiplicacao");
+			//int resultado = calculadora.Operaçoes(10, 5, "divisao");
+			caixaTexto.Text = resultado.ToString();
+			*/
+
+			//-------------------------------------------------------------------------------------------------------------
+
+			// VI-parte - A mesma forma da V-parte
+			Matematica calculadora = new Matematica();
+
 			//int resultado = calculadora.Operaçoes(10, 5, "adicao");
 			//int resultado = calculadora.Operaçoes(10, 5, "subtracao");
 			int resultado = calculadora.Operacoes(10, 5, "multiplicacao");

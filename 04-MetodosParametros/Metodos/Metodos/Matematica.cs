@@ -111,7 +111,7 @@ namespace Metodos
 		//-------------------------------------------------------------------------------------------------------------
 
 		// V-parte - 1 metodo publico e 4 metodos privados, dentro da mesma classe usando uma condicional If else if  
-
+		/*
 		int parcelaA;
 		int parcelaB;
 
@@ -152,6 +152,52 @@ namespace Metodos
 		private int divisao()  // metodo privado
 		{
 			return parcelaA / parcelaB;
+		} */
+
+		// VI-parte - A mesma forma da V-parte renomeando as variaveis para o mesmo nome dos parametros  parcelaA - numA
+
+		int numA;
+		int numB;
+
+		public int Operacoes(int numA, int numB, string operacao)  // Metodo com 3 parametros
+		{
+
+			this.numA = numA; // o intellisense automaticamente cria esta linha com o this.NumA = numA, EVITANDO ASSIM UM CONFLITO
+			this.numB = numB;  // o intellisense automaticamente cria esta linha com o this.NumA = numA, EVITANDO ASSIM UM CONFLITO
+
+			int resultado = 0;
+
+			if (operacao == "adicao")
+				resultado = adicao();
+			else if (operacao == "subtracao")
+				resultado = subtracao();
+			else if (operacao == "multiplicacao")
+				resultado = multiplicacao();
+			else if (operacao == "divisao")
+				resultado = divisao();
+			return resultado;
+		}
+
+
+		private int adicao()  // metodo privado
+		{
+			return numA + numB;
+		}
+
+		private int subtracao()  // metodo privado
+		{
+			return numA - numB;
+		}
+
+		private int multiplicacao()  // metodo privado
+		{
+			return numA * numB;
+		}
+
+		private int divisao()  // metodo privado
+		{
+			return numA / numB;
 		}
 	}
+
 }
