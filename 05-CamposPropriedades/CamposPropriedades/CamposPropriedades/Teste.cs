@@ -11,24 +11,19 @@ namespace CamposPropriedades
 		// Definição de CAMPO
 		string _nome; // propriedade que na verdade é um campo porque nao tem 'set' nem 'get'.
 					  // Assim devemos coloca-la privada retirando o public. Nota sem public nem privado o campo é privado.
-					  // Fica visivel dentro da classe mas não fora
+					  // Fica visivel dentro da classe mas não fora desta.
 					  // E por boas praticas do programador devemos nomear os campos precedidos por underscore '_nome'.
-		int _idade;
-
 
 		// Definição de PROPRIEDADE e sua verdadeira estrutura.
-
 		public string Nome
 		{
 			set 
-			{
-				// Implementação de validação:
+			{   // Implementação de mecanismo de validação:
 				if (value == "Marco")
 				{
 					System.Windows.Forms.MessageBox.Show("Aconteceu um Erro!");
 					_nome = "ERRO: Nome introduzido possui confidencialidade!";
 				}
-					
 				else
 				_nome = value;  // vai definir um valor. 'value' é uma palavra resrevada pelo C#
 			}
