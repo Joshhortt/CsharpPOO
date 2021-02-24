@@ -98,7 +98,7 @@ namespace Metodos
 		//-------------------------------------------------------------------------------------------------------------
 
 		// VII-parte - Nova classe (label->Valor e botao->Teste) com passagem de valor por referencia.
-
+		/*
 		private void CmdExecutar1_Click(object sender, EventArgs e)
 		{
 			Teste objeto = new Teste();  // nova instancia
@@ -106,7 +106,22 @@ namespace Metodos
 			//objeto.Aumentar(ref v);
 			objeto.Diminuir(ref v);
 			caixaTexto1.Text = v.ToString();
-		
+		} */
+
+		//-------------------------------------------------------------------------------------------------------------
+
+		// VIII-parte - Parametros com valor por defeito. (predefinidos)
+
+		private void CmdExecutar1_Click(object sender, EventArgs e)
+		{
+			Teste objeto = new Teste();  // nova instancia
+			int v = 10;                  // variavel
+
+			//v = objeto.Aumentar(); // vai utilizar o valor que la esta que foi declarado como parametro que é 20 por defeito. 20+10=30
+			//v = objeto.Diminuir(); // vai utilizar o valor que la esta que foi declarado como parametro que é 20 por defeito. 30-10=20
+			//v = objeto.Multiplicar();  // vai utilizar o valor que la esta que foi declarado como parametro que é 5 por defeito. 5*10=50
+			v = objeto.Dividir();  // vai utilizar o valor que la esta que foi declarado como parametro que é 200 por defeito. 200/10=20
+			caixaTexto1.Text = v.ToString();
 		}
 	}
 }
