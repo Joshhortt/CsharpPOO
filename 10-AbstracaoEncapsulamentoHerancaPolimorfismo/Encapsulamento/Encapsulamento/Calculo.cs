@@ -16,6 +16,7 @@ namespace Encapsulamento
 		public int CalcularPrecoFinal(int precoInicial, int tipoProduto)
 		{
 			int precoFinal = 0;
+
 			// calculo de preco final
 			switch (tipoProduto)
 			{
@@ -32,7 +33,6 @@ namespace Encapsulamento
 					break;
 			}
 
-			
 			return precoFinal;
 		}
 	}
