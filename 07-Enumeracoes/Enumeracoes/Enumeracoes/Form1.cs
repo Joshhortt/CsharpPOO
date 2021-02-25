@@ -19,8 +19,9 @@ namespace Enumeracoes
 
 		private void BtnOk_Click(object sender, EventArgs e)
 		{
-			Teste objecto = new Teste();
+			Teste objecto = new Teste();  
 			objecto.ApresentarDia(Teste.DiasDaSemana.sabado);
+			objecto.Mover(Teste.Movimentos.direita);
 		}
 	}
 }
