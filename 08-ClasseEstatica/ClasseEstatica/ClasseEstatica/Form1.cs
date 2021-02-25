@@ -22,6 +22,15 @@ namespace ClasseEstatica
 			Normal objeto = new Normal();  // Instancia
 			objeto.Nome = "Jose Horta"; // Atribuido o valor da propriedade Nome
 			objeto.ApresentarNome();  // objeto que vai chamar o metodo da classe
+
+			Normal objetoNovo = new Normal();  // criar nova instancia de objetoNovo apartir da classe estatica
+			objetoNovo.Nome = "Marco Poluzzo";
+			objetoNovo.ApresentarNome();
+
+			// Estatica objetoInstancia = new Estatica(); --> Nao é possivel criar instancia da classe Estatica
+			// Basta fazer isto:
+			Estatica.Nome = "Susana Belchior";
+			Estatica.ApresentarNome();
 		}
 	}
 }
