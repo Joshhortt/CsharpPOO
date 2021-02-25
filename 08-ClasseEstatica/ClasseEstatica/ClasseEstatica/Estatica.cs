@@ -12,7 +12,9 @@ namespace ClasseEstatica
 	{
 		// public string Nome;  Nao vai funcionar pq tem de ser declara tambem static
 
-		public static string Nome;  // Propriedade static
+		public static string Nome;  // campo static
+
+		public static string NomePrograma = "Aplicação de Teste";  // Propriedade static que ja esta definida e com valor atribuido
 
 		public static void ApresentarNome()  // Metodo static
 		{

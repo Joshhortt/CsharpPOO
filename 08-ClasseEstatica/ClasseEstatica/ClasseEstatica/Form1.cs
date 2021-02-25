@@ -15,6 +15,8 @@ namespace ClasseEstatica
 		public Form1()
 		{
 			InitializeComponent();
+			this.Text = Estatica.NomePrograma; // this.' significa este objeto ou seja este formulario,
+			                                  // estamos a chamar um campo do tipo string ao formulario
 		}
 
 		private void BtnOk_Click(object sender, EventArgs e)
@@ -27,7 +29,8 @@ namespace ClasseEstatica
 			objetoNovo.Nome = "Marco Poluzzo";
 			objetoNovo.ApresentarNome();
 
-			// Estatica objetoInstancia = new Estatica(); --> Nao é possivel criar instancia da classe Estatica
+			// Estatica objetoInstancia = new Estatica(); --> Nao é possivel criar instancia da classe Estatica.
+
 			// Basta fazer isto:
 			Estatica.Nome = "Susana Belchior";
 			Estatica.ApresentarNome();
