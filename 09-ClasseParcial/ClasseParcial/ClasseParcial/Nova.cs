@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassePartial
 {
-	partial class Teste
+	class Nova
 	{
-
-		//propriedades da classe 
-		public string Nome { get; set; }
-		public string Apelido { get; set; }
 	}
 }

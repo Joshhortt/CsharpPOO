@@ -8,9 +8,9 @@ namespace ClassePartial
 {
 	partial class Teste
 	{
-
-		//propriedades da classe 
-		public string Nome { get; set; }
-		public string Apelido { get; set; }
+		public void ApresentarNome()
+		{
+			System.Diagnostics.Trace.WriteLine(Nome + " " + Apelido);
+		}
 	}
 }
