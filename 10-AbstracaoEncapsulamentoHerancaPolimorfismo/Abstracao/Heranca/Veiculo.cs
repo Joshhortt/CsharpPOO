@@ -15,10 +15,15 @@ namespace Abstracao
 
 		abstract public void Acelerar();  // Metodo Acelerar abstract que obriga a que as classes derivadas o implementam.
 
-		public void Parar()  // Metodo Parar que é automaticamente herdado.
+		//public void Parar()  // Metodo Parar que é automaticamente herdado.
+		//{
+		//	System.Diagnostics.Trace.WriteLine("Parou!");
+		//}
+
+		public virtual void Parar()  // Metodo Parar com 'virtual' que é automaticamente herdado.
 		{
 			System.Diagnostics.Trace.WriteLine("Parou!");
 		}
-		
+
 	}
 }
