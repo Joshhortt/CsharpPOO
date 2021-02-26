@@ -19,8 +19,11 @@ namespace Heranca
 
 		private void BtnExecutar_Click(object sender, EventArgs e)
 		{
+			Veiculo veiculo = new Veiculo(); // Instancia Veiculo
+			 // veiculo.   // consegue ter acesso a Acelerar, cor, marca.
+
 			Carro carro = new Carro(); // Instancia Carro 
-			// carro.   // consegue ter acesso a Acelerar, cor, marca, VelocidadeMaxima.
+			//carro.   // consegue ter acesso a Acelerar, cor, marca, VelocidadeMaxima e LigarMotor.
 
 			Bicicleta bike = new Bicicleta();  // Instancia Bicicleta
 			// bike. // consegue ter acesso a Acelerar, cor, marca, Pedalar.	
