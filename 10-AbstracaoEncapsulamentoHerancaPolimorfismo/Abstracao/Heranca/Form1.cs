@@ -28,11 +28,13 @@ namespace Abstracao
 			Carro carro = new Carro(); // Instancia Carro 
 									   //carro.   // consegue ter acesso a Acelerar, cor, marca, VelocidadeMaxima e LigarMotor.
 			carro.Acelerar();  // Testar o acesso ao metodo Acelerar pela sub classe
+			carro.Parar();
 
 			//Bicicleta com implementação Abstract
 			Bicicleta bike = new Bicicleta();  // Instancia Bicicleta
 											   // bike. // consegue ter acesso a Acelerar, cor, marca, Pedalar.	
 			bike.Acelerar();  // Testar o acesso ao metodo Acelerar pela sub classe
+			bike.Parar();
 		}
 	}
 }
