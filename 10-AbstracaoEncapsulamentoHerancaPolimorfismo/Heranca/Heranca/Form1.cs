@@ -20,13 +20,16 @@ namespace Heranca
 		private void BtnExecutar_Click(object sender, EventArgs e)
 		{
 			Veiculo veiculo = new Veiculo(); // Instancia Veiculo
-			 // veiculo.   // consegue ter acesso a Acelerar, cor, marca.
+											 // veiculo.   // consegue ter acesso a Acelerar, cor, marca.
+			veiculo.Acelerar();  // Testar o acesso ao metodo Acelerar pela superclasse
 
 			Carro carro = new Carro(); // Instancia Carro 
-			//carro.   // consegue ter acesso a Acelerar, cor, marca, VelocidadeMaxima e LigarMotor.
+									   //carro.   // consegue ter acesso a Acelerar, cor, marca, VelocidadeMaxima e LigarMotor.
+			carro.Acelerar();  // Testar o acesso ao metodo Acelerar pela sub classe
 
 			Bicicleta bike = new Bicicleta();  // Instancia Bicicleta
-			// bike. // consegue ter acesso a Acelerar, cor, marca, Pedalar.	
+											   // bike. // consegue ter acesso a Acelerar, cor, marca, Pedalar.	
+			bike.Acelerar();  // Testar o acesso ao metodo Acelerar pela sub classe
 		}
 	}
 }

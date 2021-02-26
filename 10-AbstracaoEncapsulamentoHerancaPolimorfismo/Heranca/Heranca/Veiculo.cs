@@ -14,7 +14,7 @@ namespace Heranca
 
 		public void Acelerar()
 		{
-
+			System.Diagnostics.Trace.WriteLine("Acelerou..");
 		}
 	}
 }
