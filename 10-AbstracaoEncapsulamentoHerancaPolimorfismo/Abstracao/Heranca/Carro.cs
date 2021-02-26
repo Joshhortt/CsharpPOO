@@ -21,7 +21,11 @@ namespace Abstracao
 
 		public override void Parar()  // imlementar o metodo 'override' de Parar()  -- > ao escreve lo fazer double click quando aparecer o metodo							  
 		{
-			base.Parar();   // ele cria a linha de codigo abaixo que é uma instrução -- > 'base.Parar();' que +e no fundo a origem a super classe 'veiculo'.
+			//base.Parar();   // ele cria a linha de codigo abaixo que é uma instrução -- > 'base.Parar();' que no fundo a origem a super classe 'veiculo'.
+			// vai correr na console novamente a mensagem que esta na origem ("Parou!"). 
+
+			System.Diagnostics.Trace.WriteLine("Paragem do Carro!");  // Contudo a mensagem na base se comentarmos ou removermos a linha de codigo
+			                                                          // e acresentarmos uma nova mensagem ira fazer o override na origem, esta irá aparecer na console.
 		}
 	}
 }
