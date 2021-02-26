@@ -12,6 +12,9 @@ namespace Heranca
 		public string cor { get; set; }  // propriedade
 		public string marca { get; set; }  // propriedade
 
+		public void Acelerar()
+		{
 
+		}
 	}
 }
