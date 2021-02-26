@@ -1,4 +1,4 @@
-﻿// 10. Abstração e Herança
+﻿// 10. Abstração e Herança, inclui abstract class vs sealed class e ainda virtual e override.
 using System;
 using System.Collections.Generic;
 using System.Linq;
